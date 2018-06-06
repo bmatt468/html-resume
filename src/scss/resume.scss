@@ -1,6 +1,91 @@
 @import 'fonts';
 @import 'variables';
 
-h1 {
-	color: green;
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+.resume {
+    min-height: 100vh;
+    display: flex;
+    margin: 0px;
+    font-family: $font-raleway;
+
+    .sidebar {
+        width: 40%;
+        padding: 5% 3%;
+        border-right: 2px solid $gray;
+        background: $dark-blue;
+        color: #fff;
+
+        .image {
+            padding: 0px 30px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .name_title {
+            text-align: center;
+
+            .name {
+                font-weight: 500;
+                margin-bottom: 0px;
+                font-size: 36px;
+                line-height: 1;
+            }
+
+            .title {
+                font-weight: 200;
+                margin-top: 3px;
+            }
+        }
+
+        .sidebar-section {
+            h4 {
+                margin: 0px;
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+
+                &:after {
+                    margin-left: 5px;
+                    content: '';
+                    border: .75px solid #fff;
+                    border-radius: 2px;
+                    flex-grow: 1;
+                }
+            }
+
+            .contact-list {
+                list-style: none;
+                padding-left: 0px;
+                margin: 15px 0px;
+
+                .center {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .content {
+        width: 100%;
+        padding: 4% 3%;
+
+        .section {
+            margin-bottom: 20px;
+
+            h4 {
+                margin: 0px;
+                margin-bottom: 3px;
+                border-bottom: 2px solid $silver;
+                font-size: 20px;
+                color: $dark-blue;
+            }
+
+            p {
+                margin: 0px;
+            }
+        }
+    }
 }
