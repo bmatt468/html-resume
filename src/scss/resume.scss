@@ -67,12 +67,38 @@
             }
 
             .skills {
+                margin: 3px 0px;
 
+                tr {
+                    text-align: left;
+
+                    th {
+                        font-style: italic;
+                        font-weight: 600;
+                        padding: 0px;
+                        line-height: 1;
+                    }
+
+                    td {
+                        padding: 0px;
+                        line-height: 1;
+                        padding-left: 5px;
+
+                        ul {
+                            margin: 2px 0px;
+                            padding-left: 18px;
+
+                            li {
+                                margin-bottom: 2px;
+                            }
+                        }
+                    }
+                }
             }
 
             &.education {
                 h4 {
-                    margin-bottom: 15px;
+                    margin: 15px 0px;
                 }
 
                 p {
@@ -140,10 +166,6 @@
                 .title {
                     font-size: 16px;
                     font-weight: 600;
-                }
-
-                .description {
-
                 }
             }
         }
