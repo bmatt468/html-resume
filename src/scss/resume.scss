@@ -11,7 +11,7 @@
 
     .sidebar {
         width: 40%;
-        padding: 5% 3%;
+        padding: 5% 4%;
         border-right: 2px solid $gray;
         background: $dark-blue;
         color: #fff;
@@ -65,26 +65,86 @@
                     text-align: center;
                 }
             }
+
+            .skills {
+
+            }
+
+            &.education {
+                h4 {
+                    margin-bottom: 15px;
+                }
+
+                p {
+                    margin: 0px;
+                }
+            }
         }
     }
 
     .content {
         width: 100%;
-        padding: 4% 3%;
+        padding: 4%;
+        font-size: 14px;
 
         .section {
             margin-bottom: 20px;
 
             h4 {
                 margin: 0px;
-                margin-bottom: 3px;
+                margin-bottom: 5px;
                 border-bottom: 2px solid $silver;
-                font-size: 20px;
+                font-size: 18px;
                 color: $dark-blue;
             }
 
             p {
                 margin: 0px;
+                font-size: 14px;
+            }
+
+            .job {
+                margin-bottom: 5px;
+
+                .title-company-time {
+                    display: flex;
+
+                    .title-company {
+                        flex-grow: 1;
+
+                        .title {
+                            font-size: 16px;
+                            font-weight: 600;
+                        }
+
+                        .company {
+                            font-weight: 300;
+                            font-style: italic;
+                        }
+                    }
+
+                    .time {
+                        font-weight: 600;
+                    }
+                }
+
+                .responsibilities {
+                    margin: 5px 0px;
+                    padding-left: 15px;
+                }
+            }
+
+            .project {
+                margin-bottom: 5px;
+
+                .title {
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+
+                .description {
+
+                }
             }
         }
     }
