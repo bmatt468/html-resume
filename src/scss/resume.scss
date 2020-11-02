@@ -41,8 +41,11 @@
         }
 
         .sidebar-section {
+            margin-bottom: 20px;
+
             h4 {
                 margin: 0px;
+                margin-bottom: 5px;
                 font-size: 20px;
                 display: flex;
                 align-items: center;
@@ -56,10 +59,13 @@
                 }
             }
 
+            p {
+                margin: 0;
+            }
+
             .contact-list {
                 list-style: none;
                 padding-left: 0px;
-                margin: 15px 0px;
 
                 .center {
                     text-align: center;
@@ -93,16 +99,6 @@
                             }
                         }
                     }
-                }
-            }
-
-            &.education {
-                h4 {
-                    margin: 15px 0px;
-                }
-
-                p {
-                    margin: 0px;
                 }
             }
         }
